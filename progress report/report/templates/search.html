@@ -1,0 +1,45 @@
+{%extends "layout_log.html"%}
+{% block title %}Show Report{% endblock %}
+{% block content %}
+
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Searched Reports Of {{name}}</h3>
+              </div>
+              <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                  <div class="input-group">
+                    <form action="/report_postadmincheck" method="get" id = "s">
+                    {% csrf_token %} 
+                    <input type="text" class="form-control" name = "search" placeholder= "Search for..." >
+                    <input type="hidden" name="UUID" value="{{UID}}">
+                    <span class="input-group-btn">
+
+                      <button class="btn btn-default" type="submit" onclick="location.href= '/report_search_check/?z={{UID}}" form="s">Go!</button>
+                    </span></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+               
+               <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2><small></small></h2>
+           <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+{% for x,y,z in lise %}
+<nav>
+<a href="/report_admindetail/?q={{UID}}&z={{y}}" >Date: {{ z }} Task: {{ x }} </a>&nbsp;&nbsp;<br><br></nav>
+
+  {% endfor %}
+
+
+{% endblock %}

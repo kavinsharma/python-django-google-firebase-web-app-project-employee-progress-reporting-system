@@ -1,0 +1,48 @@
+{%extends "layout_log.html"%}
+{% block title %}Show Report{% endblock %}
+{% block content %}
+
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3><font color="white">Daily Progress Check Report</font></h3>
+              </div>
+               <div class="clearfix"></div>
+
+
+ <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+           <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+<form action="/report_postcreatereport/" method="post" id="report" class="form-horizontal form-label-left">  
+<span class="section">Report On {{date}}</span>
+<div class="item form-group">
+<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Date:<span class="required"></span>
+</label>
+<div class="col-md-6 col-sm-6 col-xs-12"style="margin-top: 7.5px;">
+{{date}}
+</div></div>
+<div class="item form-group">
+<label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Task:<span class="required"></span>
+</label>
+<div class="col-md-6 col-sm-6 col-xs-12"style="margin-top: 7.5px;">
+{{Task}}
+</div>
+</div>
+<div class="item form-group">
+<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Progress:<span class="required"></span>
+</label>
+<div class="col-md-6 col-sm-6 col-xs-12"style="margin-top: 7.5px;">
+{{Progress}} 
+</div></div>
+
+</form>
+</div>
+</div></div></div></div></div></div>
+
+{% endblock %}

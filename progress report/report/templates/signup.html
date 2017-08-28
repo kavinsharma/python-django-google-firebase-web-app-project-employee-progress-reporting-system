@@ -1,0 +1,35 @@
+{%extends "layout.html"%}
+{% block title %}Reset Password{% endblock %}
+{% block content %}
+<div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Password Reset</h3>
+              </div>
+               <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2><small></small></h2>
+           <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+<form action="/report_lostpassword/" method="post" class="form-horizontal form-label-left" id="SignUp">	{% csrf_token %}
+    <div class="item form-group">
+<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Email: <span class="required">*</span>
+</label>
+<div class="col-md-6 col-sm-6 col-xs-12">
+    <input id="team_name" type="text" name="email" required class="form-control col-md-7 col-xs-12" ><br><br>
+</div></div>
+    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                      
+    <button type="submit" name="my-file" class="btn btn-success" form="SignUp">Reset Password</button><br>
+
+        </form></div></div></form></div></div></div></div></div></div></div>
+
+{% endblock %}

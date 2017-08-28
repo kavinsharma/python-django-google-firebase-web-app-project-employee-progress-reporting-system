@@ -1,0 +1,46 @@
+{%extends "layout_log.html"%}
+
+{% load static from staticfiles %}
+
+{% block title %}Admin Check{% endblock %}
+{%block back%} <button type="submit" class="btn btn-info btn-sm" name="my-file" onclick="location.href='{% url 'adminhome' %}'">Home</button>{%endblock%}
+{% block name %}{{name|safe}}{% endblock %}
+
+
+{% block content %}
+
+<!-- /top navigation --> 
+{% if message %}
+<script>
+    alert('{{ message }}');
+</script>
+
+{% endif %}
+
+              
+  <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3><font color="white">Daily Progress Employee Select</font></h3>
+              </div>
+               <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2><small>Employee Name and Account Status <code>1 = enable | 0 = disable</code></small></h2>
+           <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+{% for uuid,y, status in lise %}
+<div style="width:100%;">
+<a style="display: inline-block;width: 60%;"href="/report_postadmincheck/?q={{uuid}}" ><h2>{{ y }}</h2></a>
+<a style="display: inline-block;width: 34%;  "href="/report_admincheck/?uuid={{uuid}}&s={{status}}"> <h2>{{ status }}</h2></a>
+</div><br>
+
+ 
+  {% endfor %}
+{% endblock %}
