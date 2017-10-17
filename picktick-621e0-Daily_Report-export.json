@@ -1,0 +1,43 @@
+{
+  "MNQcszHOTSgc9vbS26fyiAZNQYx2" : {
+    "details" : {
+      "name" : ""
+    }
+  },
+  "lTtD8bcuxAMhanMd3t2GSNo9UPo2" : {
+    "details" : {
+      "name" : "Kavin Sharma",
+      "status" : "0"
+    },
+    "reports" : {
+      "1500654756" : {
+        "Progress:" : "ghjkl",
+        "Task:" : "search Search by email address, phone number, or use",
+        "date" : "2017-07-21 16:32"
+      },
+      "1501239376" : {
+        "Progress:" : "Your security rules are defined as public, anyone can read or write to your database\r\nLEARN MORE\r\nDISMISS\r\n",
+        "Task:" : "Use Html Tags For Bold, Italic, Underline, Whole Progress Report Will be mailed to admin\r\n\r\n",
+        "date" : "2017-07-28 10:56"
+      },
+      "1501875037" : {
+        "Progress:" : "bm",
+        "Task:" : "nbmn",
+        "date" : "2017-08-04 19:30"
+      }
+    }
+  },
+  "wIxYRneGrtO33sgosvk3tWP4l7r2" : {
+    "details" : {
+      "name" : "Nishant Thapliyal",
+      "status" : "1"
+    },
+    "reports" : {
+      "1501239267" : {
+        "Progress:" : "Your security rules are defined as public, anyone can read or write to your database\r\nLEARN MORE\r\nDISMISS\r\n",
+        "Task:" : "https://console.firebase.google.com/u/1/project/picktick-621e0/database/data/Daily_Report/wIxYRneGrtO33sgosvk3tWP4l7r2",
+        "date" : "2017-07-28 10:54"
+      }
+    }
+  }
+}
